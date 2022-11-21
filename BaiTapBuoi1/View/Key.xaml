@@ -1,0 +1,40 @@
+﻿<Window x:Class="BaiTapBuoi1.View.Key"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BaiTapBuoi1.View" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Phiên bản: 6.22.09.07" Height="450" Width="400"
+        Icon="/Photo/logo.png"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        >
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Image Source="/Photo/logo.png" Grid.Row="0"/>
+        <TextBox Margin="10" Style="{StaticResource MaterialDesignOutlinedTextBox}" materialDesign:HintAssist.Hint="Tên tài khoản" Grid.Row="1"/>
+        <Button Content="Tạo mã" Width="100" Background="Green" Grid.Row="2"/>
+        <TextBox Margin="10" Style="{StaticResource MaterialDesignOutlinedTextBox}" materialDesign:HintAssist.Hint="Mã máy" Grid.Row="3"/>
+        
+        <Button Margin="20" Content="Copy" Grid.Row="3" Width="70" Background="White" BorderBrush="Black" Foreground="Black" HorizontalAlignment="Right" Height="28"/>
+        
+        
+        <TextBox Margin="10" Style="{StaticResource MaterialDesignOutlinedTextBox}" materialDesign:HintAssist.Hint="Key bản quyền" Grid.Row="4"/>
+        <Button Margin="20" Content="Paste" Grid.Row="4" Width="70" Background="White" BorderBrush="Black" Foreground="Black" HorizontalAlignment="Right" Height="28"/>
+        
+        <Button Content="Lưu" Width="80" Background="Green" Grid.Row="5"/>
+    </Grid>
+</Window>
